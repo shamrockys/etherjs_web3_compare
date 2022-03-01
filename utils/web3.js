@@ -1,3 +1,9 @@
+// Tried web3 first and had some problems
+// So used etherjs and problems disappeared
+// error Number can only safely store up to 53 bits
+// This error only appeared when fetching "deposit" transaction on web3
+// As a result, etherjs is better than web3
+
 import Web3 from 'web3';
 
 export const web3 = new Web3(new Web3.providers.HttpProvider('https://data-seed-prebsc-1-s1.binance.org:8545'));
